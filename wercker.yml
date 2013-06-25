@@ -1,0 +1,9 @@
+box: wercker/php
+build:
+  steps:
+    - script:
+        name: Install dependencies
+        code: composer.phar install
+    - script:
+        name: Run tests
+        code: phpunit phpunit.xml.dist
