@@ -1,6 +1,6 @@
 box: wercker/php
 build:
-  steps
+  steps:
     # install the dependencies:
     - script:
         name: Install dependencies
