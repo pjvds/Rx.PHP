@@ -8,4 +8,6 @@ build:
     # run the unit tests configured in the phpunit.xml
     - script:
         name: Run tests
-        code: phpunit phpunit.xml.dist
+        code: |-
+          mv phpunit.xml.dist phpunit.xml
+          phpunit
